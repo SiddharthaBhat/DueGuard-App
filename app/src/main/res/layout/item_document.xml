@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardDocument"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true"
+    app:cardBackgroundColor="#F1F3F4"
+    app:strokeColor="#D0D0D0"
+    app:strokeWidth="1dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="14dp">
+
+        <!-- 3 DOT MENU -->
+        <ImageButton
+            android:id="@+id/btnMenu"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@android:drawable/ic_menu_more"
+            android:tint="#424242"
+            android:contentDescription="Menu"/>
+
+        <!-- DOCUMENT TITLE -->
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@id/btnMenu"
+            android:text="Document Title"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#212121"/>
+
+        <!-- EXPIRY DATE -->
+        <TextView
+            android:id="@+id/tvExpiry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvTitle"
+            android:text="Expiry: 31 Mar 2026"
+            android:textSize="14sp"
+            android:textColor="#1E88E5"
+            android:layout_marginTop="4dp"/>
+
+        <!-- OCR PREVIEW -->
+        <TextView
+            android:id="@+id/tvOcrPreview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvExpiry"
+            android:text="OCR preview text"
+            android:textSize="13sp"
+            android:textColor="#616161"
+            android:layout_marginTop="6dp"
+            android:maxLines="2"
+            android:ellipsize="end"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

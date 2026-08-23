@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">DueGuard</string>
+
+    <string name="no_documents">No documents found</string>
+    <string name="please_login">Please login to view documents</string>
+    <string name="expires">Expires: %s</string>
+
+    <string name="selected_file">Selected: %s</string>
+    <string name="enter_title_ocr">Enter title and OCR text</string>
+    <string name="document_saved">Document saved</string>
+
+    <string name="settings">Settings</string>
+    <string name="enable_notifications">Enable Notifications</string>
+    <string name="save">Save</string>
+    <string name="menu_documents">Documents</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_logout">Logout</string>
+
+
+
+
+
+</resources>

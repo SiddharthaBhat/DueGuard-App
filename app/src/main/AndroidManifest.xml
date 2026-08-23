@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Permissions -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false"/>
+
+    <application
+        android:name="com.example.finalproj.MyApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Material3.DayNight.NoActionBar">
+
+        <activity
+            android:name="com.example.finalproj.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.example.finalproj.security.LockActivity"/>
+        <activity android:name="com.example.finalproj.MainNavigationActivity"/>
+
+        <!-- Login and Signup Activities removed from manifest -->
+
+        <activity android:name="com.example.finalproj.home.HomeActivity"/>
+        <activity android:name="com.example.finalproj.MemberListActivity"/>
+        <activity android:name="com.example.finalproj.AddMemberActivity"/>
+        <activity android:name="com.example.finalproj.home.MemberDashboardActivity"/>
+        <activity android:name="com.example.finalproj.home.DocumentListActivity"/>
+        <activity android:name="com.example.finalproj.home.DocumentDetailActivity"/>
+        <activity android:name="com.example.finalproj.home.EditDocumentActivity"/>
+
+        <activity
+            android:name="com.example.finalproj.home.UploadActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="image/*" />
+                <data android:mimeType="application/pdf" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.example.finalproj.security.AlertsActivity"/>
+        <activity android:name="com.example.finalproj.security.AlertDetailActivity"/>
+        <activity android:name="com.example.finalproj.security.IntruderCaptureActivity"/>
+        <activity android:name="com.example.finalproj.settings.SettingsActivity"/>
+        <activity android:name="com.example.finalproj.settings.NotificationSettingsActivity"/>
+        <activity android:name="com.example.finalproj.appinfo.AppInfoActivity"/>
+        <activity android:name="com.example.finalproj.security.SecurityActivity"/>
+        <activity android:name="com.example.finalproj.profile.ProfileActivity"/>
+        <activity android:name="com.example.finalproj.profile.CreateProfileActivity"/>
+
+        <receiver
+            android:name="com.example.finalproj.notification.NotificationReceiver"
+            android:exported="false"/>
+
+        <receiver
+            android:name="com.example.finalproj.notification.NotifyMemberReceiver"
+            android:exported="false"/>
+
+    </application>
+
+</manifest>

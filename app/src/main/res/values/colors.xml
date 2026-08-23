@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Basic Colors -->
+    <color name="background">#F5F5F5</color>
+    <color name="primary">#2196F3</color>
+    <color name="primary_dark">#1976D2</color>
+    <color name="secondary">#757575</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="purple_200">#BB86FC</color>
+    <color name="purple_500">#6200EE</color>
+    <color name="purple_700">#3700B3</color>
+    <color name="teal_200">#03DAC5</color>
+    <color name="teal_700">#018786</color>
+    <color name="cream_background">#F6F1EB</color>
+    <color name="primary_accent">#6C63FF</color>
+    <color name="card_soft">#F2ECE6</color>
+    <color name="bg_dashboard">#F2F4F8</color>
+    <color name="card_white">#FFFFFF</color>
+    <color name="text_primary">#1A1A1A</color>
+    <color name="text_secondary">#6B7280</color>
+    <color name="gradient_start">#6C63FF</color>
+    <color name="gradient_end">#5A54E8</color>
+
+    <!-- Navigation Item Color - Add this line -->
+    <color name="nav_item_color">#757575</color>
+
+    <!-- Selector colors -->
+    <color name="selector_checked">@color/primary_accent</color>
+    <color name="selector_unchecked">#9E9E9E</color>
+</resources>

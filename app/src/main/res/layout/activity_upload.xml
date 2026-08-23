@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:padding="24dp">
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Add Document"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#2196F3" />
+
+    <!-- Member Selection (Only visible for Share flow) -->
+    <LinearLayout
+        android:id="@+id/layoutMemberSelection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Select Member"
+            android:textSize="14sp"
+            android:textColor="#666666" />
+
+        <Spinner
+            android:id="@+id/spinnerMembers"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:drawable/btn_dropdown" />
+
+        <Button
+            android:id="@+id/btnAddNewMember"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+ Create New Member"
+            android:textAllCaps="false" />
+    </LinearLayout>
+
+    <!-- Progress -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:visibility="gone" />
+
+    <!-- Upload / Scan -->
+    <Button
+        android:id="@+id/btnUploadScan"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="24dp"
+        android:text="Upload / Scan Document"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:backgroundTint="#2196F3"
+        android:textColor="#FFFFFF" />
+
+    <!-- Divider -->
+    <TextView
+        android:id="@+id/tvOrDivider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"
+        android:text="OR"
+        android:textSize="14sp"
+        android:textColor="#999999" />
+
+    <!-- Add Manually -->
+    <Button
+        android:id="@+id/btnAddManually"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="24dp"
+        android:text="Add Manually"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:backgroundTint="#E0E0E0"
+        android:textColor="#000000" />
+
+</LinearLayout>
